@@ -1,0 +1,11 @@
+POST http://localhost:3911/api/user/signup
+Content-Type: application/json
+Accept: application/json
+
+{
+    "name": "Javier",
+    "surname": "Celada",
+    "nick": "nick",
+    "email": "test@test.com",
+    "password": "secret"
+}
