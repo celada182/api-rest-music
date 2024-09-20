@@ -1,0 +1,7 @@
+@id = 66ebdd779aae0dd9d738400c
+@token = eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjY2ZWJkZDc3OWFhZTBkZDlkNzM4NDAwYyIsIm5hbWUiOiJKYXZpZXIiLCJzdXJuYW1lIjoiQ2VsYWRhIiwiZW1haWwiOiJ0ZXN0QHRlc3QuY29tIiwicm9sZSI6InJvbGVfdXNlciIsImltYWdlIjoiZGVmYXVsdC5wbmciLCJpYXQiOjE3MjY4MjE2MzUsImV4cCI6IjIwMjQtMTAtMjBUMDg6NDA6MzUuMzk3WiJ9.N7JQT4QhpoN2z3i_cB1kR-gV9ODeR9nqZhEUxHt7Hik
+
+GET http://localhost:3911/api/user/profile/{{id}}
+Content-Type: application/json
+Accept: application/json
+Authorization: Bearer {{token}}

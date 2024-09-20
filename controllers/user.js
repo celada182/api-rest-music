@@ -121,8 +121,35 @@ const login = (req, res) => {
         });
 };
 
+const profile = (req, res) => {
+    const id = req.params.id;
+    User.findById(id).then(user => {
+        if (!user) {
+            return res.status(404).send({
+                status: "error",
+                message: "User not found"
+            });
+        }
+        const identityUser = { ...user.toObject() };
+        delete identityUser.password;
+        delete identityUser.role;
+        return res.status(200).send({
+            status: "success",
+            message: "User profile found",
+            user: identityUser
+        });
+    }).catch(error => {
+        console.error(error);
+        return res.status(400).send({
+            status: "error",
+            message: "Error fiding user"
+        });
+    });
+};
+
 module.exports = {
     test,
     signup,
-    login
+    login,
+    profile
 }
