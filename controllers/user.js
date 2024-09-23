@@ -2,6 +2,7 @@ const validate = require("../validation/validate");
 const User = require("../models/user");
 const bcrypt = require("bcrypt");
 const jwt = require("../jwt/jwt");
+const fs = require("fs");
 
 const test = (req, res) => {
     return res.status(200).send({
@@ -164,7 +165,7 @@ const update = (req, res) => {
             delete userToUpdate.password;
         }
         try {
-            let userUpdated = await User.findByIdAndUpdate({ _id: id }, userToUpdate, { new: false });
+            const userUpdated = await User.findByIdAndUpdate({ _id: id }, userToUpdate, { new: true });
             if (!userUpdated) throw new Error("User cannot be updated");
             return res.status(200).send({
                 status: "success",
@@ -187,10 +188,56 @@ const update = (req, res) => {
     });
 };
 
+const upload = async (req, res) => {
+    const id = req.params.id;
+    if (!req.file) {
+        return res.status(400).send({
+            status: "error",
+            message: "Image not found"
+        });
+    }
+    let image = req.file.originalname;
+    const imageSplit = image.split("\.");
+    const extension = imageSplit[1];
+
+    if (extension !== "png" && extension !== "jpg" && extension !== "jpeg" && extension !== "gif") {
+        const filePath = req.file.path;
+        fs.unlinkSync(filePath);
+        return res.status(400).send({
+            status: "error",
+            message: "Image invalid extension"
+        });
+    }
+
+    try {
+        const userUpdated = await User.findByIdAndUpdate({ _id: id }, { image: req.file.filename }, { new: true });
+        if (!userUpdated) {
+            console.error("Error updating image");
+            return res.status(400).send({
+                status: "error",
+                message: "Error updating image"
+            });
+        }
+        return res.status(200).send({
+            status: "success",
+            message: "User profile picture uploaded",
+            file: req.file
+        });
+
+    } catch (error) {
+        console.error(error);
+        return res.status(400).send({
+            status: "error",
+            message: "Error updating image"
+        });
+    }
+}
+
 module.exports = {
     test,
     signup,
     login,
     profile,
-    update
+    update,
+    upload
 }

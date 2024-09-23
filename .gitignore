@@ -1,3 +1,6 @@
+# Uploads
+uploads/avatars/*
+
 # Logs
 logs
 *.log
