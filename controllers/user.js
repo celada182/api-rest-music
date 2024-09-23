@@ -3,6 +3,7 @@ const User = require("../models/user");
 const bcrypt = require("bcrypt");
 const jwt = require("../jwt/jwt");
 const fs = require("fs");
+const path = require("path");
 
 const test = (req, res) => {
     return res.status(200).send({
@@ -233,11 +234,26 @@ const upload = async (req, res) => {
     }
 }
 
+const avatar = (req, res) => {
+    const file = req.params.file;
+    const filePath = "./uploads/avatars/" + file;
+    fs.stat(filePath, (error, exists) => {
+        if (error || !exists) {
+            return res.status(404).send({
+                status: "error",
+                message: "Image not found"
+            });
+        }
+    });
+    return res.sendFile(path.resolve(filePath));
+}
+
 module.exports = {
     test,
     signup,
     login,
     profile,
     update,
-    upload
+    upload,
+    avatar
 }

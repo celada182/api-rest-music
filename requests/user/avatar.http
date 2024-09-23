@@ -1,0 +1,2 @@
+@file = avatar-1727080313265-avatar.jpg
+GET http://localhost:3911/api/user/avatar/{{file}}
