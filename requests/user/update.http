@@ -1,0 +1,15 @@
+@id = 66ebdd779aae0dd9d738400c
+@token = eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjY2ZWJkZDc3OWFhZTBkZDlkNzM4NDAwYyIsIm5hbWUiOiJKYXZpZXIiLCJzdXJuYW1lIjoiQ2VsYWRhIiwiZW1haWwiOiJ0ZXN0QHRlc3QuY29tIiwicm9sZSI6InJvbGVfdXNlciIsImltYWdlIjoiZGVmYXVsdC5wbmciLCJpYXQiOjE3MjcwNzU2NzYsImV4cCI6IjIwMjQtMTAtMjNUMDc6MTQ6MzYuNDY2WiJ9.dlXWNkC6vGfaZzM0hRCrMeyzYyqxohd21tixXvqwB2k
+
+PUT http://localhost:3911/api/user/profile/{{id}}
+Content-Type: application/json
+Accept: application/json
+Authorization: Bearer {{token}}
+
+{
+    "name": "Javier",
+    "surname": "Celada",
+    "nick": "nick",
+    "email": "test@test.com",
+    "password": "secret"
+}

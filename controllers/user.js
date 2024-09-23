@@ -37,7 +37,7 @@ const signup = (req, res) => {
             { email: params.nick.toLowerCase() }
         ]
     }).then(async users => {
-        if (users && users.length > 1) {
+        if (users && users.length > 0) {
             return res.status(400).send({
                 status: "error",
                 message: "Duplicated user"
@@ -147,9 +147,50 @@ const profile = (req, res) => {
     });
 };
 
+const update = (req, res) => {
+    const id = req.params.id;
+    const userToUpdate = req.body;
+    User.findById(id).then(async user => {
+        if (!user) {
+            return res.status(404).send({
+                status: "error",
+                message: "User not found"
+            });
+        }
+        if (userToUpdate.password) {
+            let pwd = await bcrypt.hash(userToUpdate.password, 10);
+            userToUpdate.password = pwd;
+        } else {
+            delete userToUpdate.password;
+        }
+        try {
+            let userUpdated = await User.findByIdAndUpdate({ _id: id }, userToUpdate, { new: false });
+            if (!userUpdated) throw new Error("User cannot be updated");
+            return res.status(200).send({
+                status: "success",
+                message: "User profile updated",
+                user: userUpdated
+            });
+        } catch (error) {
+            console.error(error);
+            return res.status(400).send({
+                status: "error",
+                message: "Error updating user"
+            });
+        }
+    }).catch(error => {
+        console.error(error);
+        return res.status(400).send({
+            status: "error",
+            message: "Error fiding user"
+        });
+    });
+};
+
 module.exports = {
     test,
     signup,
     login,
-    profile
+    profile,
+    update
 }

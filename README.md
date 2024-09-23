@@ -1,5 +1,5 @@
 # api-rest-music
-API REST Spotify like
+API REST Spotify like using Express, Mongoose and JWT
 
 Using Mongo DB with a Docker container
 `docker run --name mongodb -p 27017:27017 -d mongodb/mongodb-community-server:latest`
