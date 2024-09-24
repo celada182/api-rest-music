@@ -229,7 +229,7 @@ const upload = async (req, res) => {
         console.error(error);
         return res.status(400).send({
             status: "error",
-            message: "Error updating image"
+            message: "Error uploading image"
         });
     }
 }

@@ -1,0 +1,6 @@
+@token = eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjY2ZWJkZDc3OWFhZTBkZDlkNzM4NDAwYyIsIm5hbWUiOiJKYXZpZXIiLCJzdXJuYW1lIjoiQ2VsYWRhIiwiZW1haWwiOiJ0ZXN0QHRlc3QuY29tIiwicm9sZSI6InJvbGVfdXNlciIsImltYWdlIjoiYXZhdGFyLTE3MjcwODAzMTMyNjUtYXZhdGFyLmpwZyIsImlhdCI6MTcyNzE2NDk0MCwiZXhwIjoiMjAyNC0xMC0yNFQwODowMjoyMC41OTJaIn0.HgPJs0Eajrv2ayGb2rLQaRfyW-V95N7JtniF1-mFoNE
+@id = 66f2734853dda867ade12c4a
+GET http://localhost:3911/api/artist/profile/{{id}}
+Content-Type: application/json
+Accept: application/json
+Authorization: Bearer {{token}}
