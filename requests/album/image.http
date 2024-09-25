@@ -1,0 +1,2 @@
+@file = album-1727252535497-album.jpg
+GET http://localhost:3911/api/album/image/{{file}}

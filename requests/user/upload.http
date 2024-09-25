@@ -9,5 +9,5 @@ Authorization: Bearer {{token}}
 Content-Disposition: form-data; name="image"; filename="avatar.jpg"
 Content-Type: image/jpeg
 
-< ./avatar_test.jpg
+< ./avatar-test.jpg
 --AvatarBoundry--

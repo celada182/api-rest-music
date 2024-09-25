@@ -1,0 +1,13 @@
+@id = 66f3c03c18b7621af97d5139
+@token = eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjY2ZWJkZDc3OWFhZTBkZDlkNzM4NDAwYyIsIm5hbWUiOiJKYXZpZXIiLCJzdXJuYW1lIjoiQ2VsYWRhIiwiZW1haWwiOiJ0ZXN0QHRlc3QuY29tIiwicm9sZSI6InJvbGVfdXNlciIsImltYWdlIjoiYXZhdGFyLTE3MjcwODAzMTMyNjUtYXZhdGFyLmpwZyIsImlhdCI6MTcyNzI1MDg4OSwiZXhwIjoiMjAyNC0xMC0yNVQwNzo1NDo0OS41ODRaIn0.rmQTYFtwR4UEtYOIPdVxhOPDA27ujJ1d-_PH9MCf_18
+
+POST http://localhost:3911/api/album/profile/{{id}}/upload
+Content-Type: multipart/form-data; boundary=AvatarBoundry
+Authorization: Bearer {{token}}
+
+--AvatarBoundry
+Content-Disposition: form-data; name="image"; filename="album.jpg"
+Content-Type: image/jpeg
+
+< ./album-test.jpeg
+--AvatarBoundry--

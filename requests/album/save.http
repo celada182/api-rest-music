@@ -1,0 +1,12 @@
+@token = eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjY2ZWJkZDc3OWFhZTBkZDlkNzM4NDAwYyIsIm5hbWUiOiJKYXZpZXIiLCJzdXJuYW1lIjoiQ2VsYWRhIiwiZW1haWwiOiJ0ZXN0QHRlc3QuY29tIiwicm9sZSI6InJvbGVfdXNlciIsImltYWdlIjoiYXZhdGFyLTE3MjcwODAzMTMyNjUtYXZhdGFyLmpwZyIsImlhdCI6MTcyNzI1MDM3NiwiZXhwIjoiMjAyNC0xMC0yNVQwNzo0NjoxNi40NjhaIn0.332SnM9gDFqAaSWCeqLxzmUH-8j6Ki094IE5NQvTIKk.HgPJs0Eajrv2ayGb2rLQaRfyW-V95N7JtniF1-mFoNE
+
+POST http://localhost:3911/api/album/save
+Content-Type: application/json
+Accept: application/json
+Authorization: Bearer {{token}}
+
+{
+    "artist": "66f27c37c09a5d4e2ed0dc9d",
+    "title": "Nothing Personal",
+    "year": 2009
+}

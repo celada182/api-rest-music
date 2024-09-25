@@ -1,0 +1,14 @@
+@token = eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjY2ZWJkZDc3OWFhZTBkZDlkNzM4NDAwYyIsIm5hbWUiOiJKYXZpZXIiLCJzdXJuYW1lIjoiQ2VsYWRhIiwiZW1haWwiOiJ0ZXN0QHRlc3QuY29tIiwicm9sZSI6InJvbGVfdXNlciIsImltYWdlIjoiYXZhdGFyLTE3MjcwODAzMTMyNjUtYXZhdGFyLmpwZyIsImlhdCI6MTcyNzI1MDg4OSwiZXhwIjoiMjAyNC0xMC0yNVQwNzo1NDo0OS41ODRaIn0.rmQTYFtwR4UEtYOIPdVxhOPDA27ujJ1d-_PH9MCf_18
+
+POST http://localhost:3911/api/song/save
+Content-Type: application/json
+Accept: application/json
+Authorization: Bearer {{token}}
+
+{
+    "title": "Weightless",
+    "artist": "66f27c37c09a5d4e2ed0dc9d",
+    "album": "66f3c03c18b7621af97d5139",
+    "track": 3,
+    "duration": 200
+}

@@ -1,4 +1,6 @@
 const Artist = require("../models/artist");
+const Album = require("../models/album");
+const Song = require("../models/song");
 const mongoosePagination = require("mongoose-pagination");
 const fs = require("fs");
 const path = require("path");
@@ -116,10 +118,14 @@ const remove = async (req, res) => {
     const id = req.params.id;
     try {
         const artistRemoved = await Artist.findByIdAndDelete(id);
-        // Delete cascade
+        const albumsRemoved = await Album.find({ artist: id }).remove();
+        // Multiple albums?
+        const songsRemoved = await Song.find({ album: albumsRemoved._id }).remove();
         return res.status(200).send({
             status: "success",
-            artist: artistRemoved
+            artist: artistRemoved,
+            albums: albumsRemoved,
+            songs: songsRemoved
         });
     } catch (error) {
         console.error(error);
@@ -152,8 +158,8 @@ const upload = async (req, res) => {
     }
 
     try {
-        const userUpdated = await Artist.findByIdAndUpdate({ _id: id }, { image: req.file.filename }, { new: true });
-        if (!userUpdated) {
+        const artistUpdated = await Artist.findByIdAndUpdate({ _id: id }, { image: req.file.filename }, { new: true });
+        if (!artistUpdated) {
             console.error("Error updating image");
             return res.status(400).send({
                 status: "error",

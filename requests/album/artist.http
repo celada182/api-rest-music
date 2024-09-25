@@ -1,0 +1,6 @@
+@token = eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjY2ZWJkZDc3OWFhZTBkZDlkNzM4NDAwYyIsIm5hbWUiOiJKYXZpZXIiLCJzdXJuYW1lIjoiQ2VsYWRhIiwiZW1haWwiOiJ0ZXN0QHRlc3QuY29tIiwicm9sZSI6InJvbGVfdXNlciIsImltYWdlIjoiYXZhdGFyLTE3MjcwODAzMTMyNjUtYXZhdGFyLmpwZyIsImlhdCI6MTcyNzI1MDg4OSwiZXhwIjoiMjAyNC0xMC0yNVQwNzo1NDo0OS41ODRaIn0.rmQTYFtwR4UEtYOIPdVxhOPDA27ujJ1d-_PH9MCf_18
+@artist = 66f27c37c09a5d4e2ed0dc9d
+GET http://localhost:3911/api/album/artist/{{artist}}
+Content-Type: application/json
+Accept: application/json
+Authorization: Bearer {{token}}

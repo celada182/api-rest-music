@@ -6,8 +6,8 @@ Content-Type: multipart/form-data; boundary=AvatarBoundry
 Authorization: Bearer {{token}}
 
 --AvatarBoundry
-Content-Disposition: form-data; name="image"; filename="avatar.jpg"
+Content-Disposition: form-data; name="image"; filename="artist.jpg"
 Content-Type: image/jpeg
 
-< ./artist_test.jpeg
+< ./artist-test.jpeg
 --AvatarBoundry--
