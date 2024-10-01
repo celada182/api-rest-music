@@ -1,0 +1,6 @@
+@token = eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjY2ZWJkZDc3OWFhZTBkZDlkNzM4NDAwYyIsIm5hbWUiOiJKYXZpZXIiLCJzdXJuYW1lIjoiQ2VsYWRhIiwiZW1haWwiOiJ0ZXN0QHRlc3QuY29tIiwicm9sZSI6InJvbGVfdXNlciIsImltYWdlIjoiYXZhdGFyLTE3MjcwODAzMTMyNjUtYXZhdGFyLmpwZyIsImlhdCI6MTcyNzc3MzM5MCwiZXhwIjoiMjAyNC0xMC0zMVQxMDowMzoxMC4yMTdaIn0.06EvXaPNB3UfTGOsJzbMv0n6HAS3r9G-orRae2WsJf4
+@id = 66f3c03c18b7621af97d5139
+GET http://localhost:3911/api/song/album/{{id}}
+Content-Type: application/json
+Accept: application/json
+Authorization: Bearer {{token}}

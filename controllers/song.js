@@ -44,7 +44,31 @@ const find = (req, res) => {
     });
 };
 
+const album = (req, res) => {
+    const id = req.params.id;
+    Song.find({ album: id }).sort("track").then(songs => {
+        if (!songs) {
+            return res.status(404).send({
+                status: "error",
+                message: "Album songs not found"
+            });
+        }
+        return res.status(200).send({
+            status: "success",
+            message: "Album songs found",
+            songs
+        });
+    }).catch(error => {
+        console.error(error);
+        return res.status(400).send({
+            status: "error",
+            message: "Error fiding album songs"
+        });
+    });
+};
+
 module.exports = {
     save,
-    find
+    find,
+    album
 }
