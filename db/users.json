@@ -1,0 +1,32 @@
+{
+    "_id": {
+        "$oid": "66fbcb8bbff13ebc4078009f"
+    },
+    "name": "Javier",
+    "surname": "Celada",
+    "nick": "nick",
+    "email": "celada@test.com",
+    "password": "$2b$10$16140WYEkMkV76FtapUGrO70gwuM2YmTsoZON673Q3Z3DxAHwujRW",
+    "role": "role_user",
+    "image": "default.png",
+    "created_at": {
+        "$date": "2024-10-01T10:14:35.125Z"
+    },
+    "__v": 0
+}
+{
+    "_id": {
+        "$oid": "66fbcb8bbff13ebc4078009a"
+    },
+    "name": "Kevin",
+    "surname": "Robles",
+    "nick": "nick",
+    "email": "robles@test.com",
+    "password": "$2b$10$16140WYEkMkV76FtapUGrO70gwuM2YmTsoZON673Q3Z3DxAHwujRW",
+    "role": "role_user",
+    "image": "default.png",
+    "created_at": {
+        "$date": "2024-10-01T10:14:35.125Z"
+    },
+    "__v": 0
+}

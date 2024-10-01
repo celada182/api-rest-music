@@ -1,0 +1,30 @@
+{
+    "_id": {
+        "$oid": "66fbccccd11e93e7d7f7630a"
+    },
+    "artist": {
+        "$oid": "66fbcc4b8ee5c14e3aa53dfe"
+    },
+    "title": "Cicatrices",
+    "year": 2018,
+    "image": "default.png",
+    "created_at": {
+        "$date": "2024-10-01T10:19:56.624Z"
+    },
+    "__v": 0
+}
+{
+    "_id": {
+        "$oid": "66fbccdbd11e93e7d7f7630c"
+    },
+    "artist": {
+        "$oid": "66fbcc278ee5c14e3aa53dfc"
+    },
+    "title": "Nothing Personal",
+    "year": 2009,
+    "image": "default.png",
+    "created_at": {
+        "$date": "2024-10-01T10:20:11.408Z"
+    },
+    "__v": 0
+}

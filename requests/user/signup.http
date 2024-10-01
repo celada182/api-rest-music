@@ -6,6 +6,6 @@ Accept: application/json
     "name": "Javier",
     "surname": "Celada",
     "nick": "nick",
-    "email": "test@test.com",
+    "email": "celada@test.com",
     "password": "secret"
 }

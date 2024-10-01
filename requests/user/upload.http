@@ -1,5 +1,5 @@
-@id = 66ebdd779aae0dd9d738400c
-@token = eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjY2ZWJkZDc3OWFhZTBkZDlkNzM4NDAwYyIsIm5hbWUiOiJKYXZpZXIiLCJzdXJuYW1lIjoiQ2VsYWRhIiwiZW1haWwiOiJ0ZXN0QHRlc3QuY29tIiwicm9sZSI6InJvbGVfdXNlciIsImltYWdlIjoiZGVmYXVsdC5wbmciLCJpYXQiOjE3MjcwNzU2NzYsImV4cCI6IjIwMjQtMTAtMjNUMDc6MTQ6MzYuNDY2WiJ9.dlXWNkC6vGfaZzM0hRCrMeyzYyqxohd21tixXvqwB2k
+@id = 66fbcb8bbff13ebc4078009f
+@token = eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjY2ZmJjYjhiYmZmMTNlYmM0MDc4MDA5ZiIsIm5hbWUiOiJKYXZpZXIiLCJzdXJuYW1lIjoiQ2VsYWRhIiwiZW1haWwiOiJjZWxhZGFAdGVzdC5jb20iLCJyb2xlIjoicm9sZV91c2VyIiwiaW1hZ2UiOiJkZWZhdWx0LnBuZyIsImlhdCI6MTcyNzc3NzgxNCwiZXhwIjoiMjAyNC0xMC0zMVQxMToxNjo1NC45ODFaIn0.4c2DTzaAo3LqYbFhem2QeyrWAEq0xiA6hr4qhLXk1y8
 
 POST http://localhost:3911/api/user/profile/{{id}}/upload
 Content-Type: multipart/form-data; boundary=AvatarBoundry
@@ -9,5 +9,5 @@ Authorization: Bearer {{token}}
 Content-Disposition: form-data; name="image"; filename="avatar.jpg"
 Content-Type: image/jpeg
 
-< ./avatar-test.jpg
+< ../../images/avatar.jpg
 --AvatarBoundry--

@@ -1,0 +1,475 @@
+{
+    "_id": {
+        "$oid": "66fbd0dc72bb1a4d3fd8bc01"
+    },
+    "artist": {
+        "$oid": "66fbcc4b8ee5c14e3aa53dfe"
+    },
+    "album": {
+        "$oid": "66fbccccd11e93e7d7f7630a"
+    },
+    "title": "Piratas",
+    "track": 1,
+    "duration": 200,
+    "file": "default.mp3",
+    "created_at": {
+        "$date": "2024-10-01T10:37:16.844Z"
+    },
+    "__v": 0
+}
+{
+    "_id": {
+        "$oid": "66fbd0dc72bb1a4d3fd8bc02"
+    },
+    "artist": {
+        "$oid": "66fbcc4b8ee5c14e3aa53dfe"
+    },
+    "album": {
+        "$oid": "66fbccccd11e93e7d7f7630a"
+    },
+    "title": "Cicatrices",
+    "track": 2,
+    "duration": 200,
+    "file": "default.mp3",
+    "created_at": {
+        "$date": "2024-10-01T10:37:16.844Z"
+    },
+    "__v": 0
+}
+{
+    "_id": {
+        "$oid": "66fbd0dc72bb1a4d3fd8bc03"
+    },
+    "artist": {
+        "$oid": "66fbcc4b8ee5c14e3aa53dfe"
+    },
+    "album": {
+        "$oid": "66fbccccd11e93e7d7f7630a"
+    },
+    "title": "Alfa y omega",
+    "track": 3,
+    "duration": 200,
+    "file": "default.mp3",
+    "created_at": {
+        "$date": "2024-10-01T10:37:16.844Z"
+    },
+    "__v": 0
+}
+{
+    "_id": {
+        "$oid": "66fbd0dc72bb1a4d3fd8bc04"
+    },
+    "artist": {
+        "$oid": "66fbcc4b8ee5c14e3aa53dfe"
+    },
+    "album": {
+        "$oid": "66fbccccd11e93e7d7f7630a"
+    },
+    "title": "Bicho raro",
+    "track": 4,
+    "duration": 200,
+    "file": "default.mp3",
+    "created_at": {
+        "$date": "2024-10-01T10:37:16.844Z"
+    },
+    "__v": 0
+}
+{
+    "_id": {
+        "$oid": "66fbd0dc72bb1a4d3fd8bc05"
+    },
+    "artist": {
+        "$oid": "66fbcc4b8ee5c14e3aa53dfe"
+    },
+    "album": {
+        "$oid": "66fbccccd11e93e7d7f7630a"
+    },
+    "title": "Niño de cristal",
+    "track": 5,
+    "duration": 200,
+    "file": "default.mp3",
+    "created_at": {
+        "$date": "2024-10-01T10:37:16.844Z"
+    },
+    "__v": 0
+}
+{
+    "_id": {
+        "$oid": "66fbd0dc72bb1a4d3fd8bc06"
+    },
+    "artist": {
+        "$oid": "66fbcc4b8ee5c14e3aa53dfe"
+    },
+    "album": {
+        "$oid": "66fbccccd11e93e7d7f7630a"
+    },
+    "title": "Pecados",
+    "track": 6,
+    "duration": 200,
+    "file": "default.mp3",
+    "created_at": {
+        "$date": "2024-10-01T10:37:16.844Z"
+    },
+    "__v": 0
+}
+{
+    "_id": {
+        "$oid": "66fbd0dc72bb1a4d3fd8bc07"
+    },
+    "artist": {
+        "$oid": "66fbcc4b8ee5c14e3aa53dfe"
+    },
+    "album": {
+        "$oid": "66fbccccd11e93e7d7f7630a"
+    },
+    "title": "Underground Kings",
+    "track": 7,
+    "duration": 200,
+    "file": "default.mp3",
+    "created_at": {
+        "$date": "2024-10-01T10:37:16.844Z"
+    },
+    "__v": 0
+}
+{
+    "_id": {
+        "$oid": "66fbd0dc72bb1a4d3fd8bc08"
+    },
+    "artist": {
+        "$oid": "66fbcc4b8ee5c14e3aa53dfe"
+    },
+    "album": {
+        "$oid": "66fbccccd11e93e7d7f7630a"
+    },
+    "title": "Generación perdida",
+    "track": 8,
+    "duration": 200,
+    "file": "default.mp3",
+    "created_at": {
+        "$date": "2024-10-01T10:37:16.844Z"
+    },
+    "__v": 0
+}
+{
+    "_id": {
+        "$oid": "66fbd0dc72bb1a4d3fd8bc09"
+    },
+    "artist": {
+        "$oid": "66fbcc4b8ee5c14e3aa53dfe"
+    },
+    "album": {
+        "$oid": "66fbccccd11e93e7d7f7630a"
+    },
+    "title": "Ey mama",
+    "track": 9,
+    "duration": 200,
+    "file": "default.mp3",
+    "created_at": {
+        "$date": "2024-10-01T10:37:16.844Z"
+    },
+    "__v": 0
+}
+{
+    "_id": {
+        "$oid": "66fbd0dc72bb1a4d3fd8bc10"
+    },
+    "artist": {
+        "$oid": "66fbcc4b8ee5c14e3aa53dfe"
+    },
+    "album": {
+        "$oid": "66fbccccd11e93e7d7f7630a"
+    },
+    "title": "Balada",
+    "track": 10,
+    "duration": 200,
+    "file": "default.mp3",
+    "created_at": {
+        "$date": "2024-10-01T10:37:16.844Z"
+    },
+    "__v": 0
+}
+{
+    "_id": {
+        "$oid": "66fbd0dc72bb1a4d3fd8bc11"
+    },
+    "artist": {
+        "$oid": "66fbcc4b8ee5c14e3aa53dfe"
+    },
+    "album": {
+        "$oid": "66fbccccd11e93e7d7f7630a"
+    },
+    "title": "Autodestrucción",
+    "track": 11,
+    "duration": 200,
+    "file": "default.mp3",
+    "created_at": {
+        "$date": "2024-10-01T10:37:16.844Z"
+    },
+    "__v": 0
+}
+{
+    "_id": {
+        "$oid": "66fbd0dc72bb1a4d3fd8bc12"
+    },
+    "artist": {
+        "$oid": "66fbcc4b8ee5c14e3aa53dfe"
+    },
+    "album": {
+        "$oid": "66fbccccd11e93e7d7f7630a"
+    },
+    "title": "Caminaré (feat. Maka)",
+    "track": 12,
+    "duration": 200,
+    "file": "default.mp3",
+    "created_at": {
+        "$date": "2024-10-01T10:37:16.844Z"
+    },
+    "__v": 0
+}
+{
+    "_id": {
+        "$oid": "66fbd0dc72bb1a4d3fd8bc13"
+    },
+    "artist": {
+        "$oid": "66fbcc4b8ee5c14e3aa53dfe"
+    },
+    "album": {
+        "$oid": "66fbccccd11e93e7d7f7630a"
+    },
+    "title": "Bestsellers",
+    "track": 13,
+    "duration": 200,
+    "file": "default.mp3",
+    "created_at": {
+        "$date": "2024-10-01T10:37:16.844Z"
+    },
+    "__v": 0
+}
+{
+    "_id": {
+        "$oid": "66fbd25c067d069a84d7b801"
+    },
+    "artist": {
+        "$oid": "66fbcc278ee5c14e3aa53dfc"
+    },
+    "album": {
+        "$oid": "66fbccdbd11e93e7d7f7630c"
+    },
+    "title": "Weightless",
+    "track": 1,
+    "duration": 200,
+    "file": "default.mp3",
+    "created_at": {
+        "$date": "2024-10-01T10:43:40.919Z"
+    },
+    "__v": 0
+}
+{
+    "_id": {
+        "$oid": "66fbd25c067d069a84d7b802"
+    },
+    "artist": {
+        "$oid": "66fbcc278ee5c14e3aa53dfc"
+    },
+    "album": {
+        "$oid": "66fbccdbd11e93e7d7f7630c"
+    },
+    "title": "Break Your Little Heart",
+    "track": 2,
+    "duration": 200,
+    "file": "default.mp3",
+    "created_at": {
+        "$date": "2024-10-01T10:43:40.919Z"
+    },
+    "__v": 0
+}
+{
+    "_id": {
+        "$oid": "66fbd25c067d069a84d7b802"
+    },
+    "artist": {
+        "$oid": "66fbcc278ee5c14e3aa53dfc"
+    },
+    "album": {
+        "$oid": "66fbccdbd11e93e7d7f7630c"
+    },
+    "title": "Damned If I Do Ya (Damned If I Don't)",
+    "track": 3,
+    "duration": 200,
+    "file": "default.mp3",
+    "created_at": {
+        "$date": "2024-10-01T10:43:40.919Z"
+    },
+    "__v": 0
+}
+{
+    "_id": {
+        "$oid": "66fbd25c067d069a84d7b802"
+    },
+    "artist": {
+        "$oid": "66fbcc278ee5c14e3aa53dfc"
+    },
+    "album": {
+        "$oid": "66fbccdbd11e93e7d7f7630c"
+    },
+    "title": "Lost In Stereo",
+    "track": 4,
+    "duration": 200,
+    "file": "default.mp3",
+    "created_at": {
+        "$date": "2024-10-01T10:43:40.919Z"
+    },
+    "__v": 0
+}
+{
+    "_id": {
+        "$oid": "66fbd25c067d069a84d7b802"
+    },
+    "artist": {
+        "$oid": "66fbcc278ee5c14e3aa53dfc"
+    },
+    "album": {
+        "$oid": "66fbccdbd11e93e7d7f7630c"
+    },
+    "title": "Stella",
+    "track": 5,
+    "duration": 200,
+    "file": "default.mp3",
+    "created_at": {
+        "$date": "2024-10-01T10:43:40.919Z"
+    },
+    "__v": 0
+}
+{
+    "_id": {
+        "$oid": "66fbd25c067d069a84d7b802"
+    },
+    "artist": {
+        "$oid": "66fbcc278ee5c14e3aa53dfc"
+    },
+    "album": {
+        "$oid": "66fbccdbd11e93e7d7f7630c"
+    },
+    "title": "Sick Little Games",
+    "track": 6,
+    "duration": 200,
+    "file": "default.mp3",
+    "created_at": {
+        "$date": "2024-10-01T10:43:40.919Z"
+    },
+    "__v": 0
+}
+{
+    "_id": {
+        "$oid": "66fbd25c067d069a84d7b802"
+    },
+    "artist": {
+        "$oid": "66fbcc278ee5c14e3aa53dfc"
+    },
+    "album": {
+        "$oid": "66fbccdbd11e93e7d7f7630c"
+    },
+    "title": "Hello Brooklyn",
+    "track": 7,
+    "duration": 200,
+    "file": "default.mp3",
+    "created_at": {
+        "$date": "2024-10-01T10:43:40.919Z"
+    },
+    "__v": 0
+}
+{
+    "_id": {
+        "$oid": "66fbd25c067d069a84d7b802"
+    },
+    "artist": {
+        "$oid": "66fbcc278ee5c14e3aa53dfc"
+    },
+    "album": {
+        "$oid": "66fbccdbd11e93e7d7f7630c"
+    },
+    "title": "Walls",
+    "track": 8,
+    "duration": 200,
+    "file": "default.mp3",
+    "created_at": {
+        "$date": "2024-10-01T10:43:40.919Z"
+    },
+    "__v": 0
+}
+{
+    "_id": {
+        "$oid": "66fbd25c067d069a84d7b802"
+    },
+    "artist": {
+        "$oid": "66fbcc278ee5c14e3aa53dfc"
+    },
+    "album": {
+        "$oid": "66fbccdbd11e93e7d7f7630c"
+    },
+    "title": "Too Much",
+    "track": 9,
+    "duration": 200,
+    "file": "default.mp3",
+    "created_at": {
+        "$date": "2024-10-01T10:43:40.919Z"
+    },
+    "__v": 0
+}
+{
+    "_id": {
+        "$oid": "66fbd25c067d069a84d7b802"
+    },
+    "artist": {
+        "$oid": "66fbcc278ee5c14e3aa53dfc"
+    },
+    "album": {
+        "$oid": "66fbccdbd11e93e7d7f7630c"
+    },
+    "title": "Keep The Change, You Filthy Animal",
+    "track": 10,
+    "duration": 200,
+    "file": "default.mp3",
+    "created_at": {
+        "$date": "2024-10-01T10:43:40.919Z"
+    },
+    "__v": 0
+}
+{
+    "_id": {
+        "$oid": "66fbd25c067d069a84d7b802"
+    },
+    "artist": {
+        "$oid": "66fbcc278ee5c14e3aa53dfc"
+    },
+    "album": {
+        "$oid": "66fbccdbd11e93e7d7f7630c"
+    },
+    "title": "A Party Song (The Walk Of Shame)",
+    "track": 11,
+    "duration": 200,
+    "file": "default.mp3",
+    "created_at": {
+        "$date": "2024-10-01T10:43:40.919Z"
+    },
+    "__v": 0
+}
+{
+    "_id": {
+        "$oid": "66fbd25c067d069a84d7b802"
+    },
+    "artist": {
+        "$oid": "66fbcc278ee5c14e3aa53dfc"
+    },
+    "album": {
+        "$oid": "66fbccdbd11e93e7d7f7630c"
+    },
+    "title": "Therapy",
+    "track": 12,
+    "duration": 200,
+    "file": "default.mp3",
+    "created_at": {
+        "$date": "2024-10-01T10:43:40.919Z"
+    },
+    "__v": 0
+}

@@ -1,4 +1,4 @@
-@token = eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjY2ZWJkZDc3OWFhZTBkZDlkNzM4NDAwYyIsIm5hbWUiOiJKYXZpZXIiLCJzdXJuYW1lIjoiQ2VsYWRhIiwiZW1haWwiOiJ0ZXN0QHRlc3QuY29tIiwicm9sZSI6InJvbGVfdXNlciIsImltYWdlIjoiYXZhdGFyLTE3MjcwODAzMTMyNjUtYXZhdGFyLmpwZyIsImlhdCI6MTcyNzE2NDk0MCwiZXhwIjoiMjAyNC0xMC0yNFQwODowMjoyMC41OTJaIn0.HgPJs0Eajrv2ayGb2rLQaRfyW-V95N7JtniF1-mFoNE
+@token = eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjY2ZmJjYjhiYmZmMTNlYmM0MDc4MDA5ZiIsIm5hbWUiOiJKYXZpZXIiLCJzdXJuYW1lIjoiQ2VsYWRhIiwiZW1haWwiOiJjZWxhZGFAdGVzdC5jb20iLCJyb2xlIjoicm9sZV91c2VyIiwiaW1hZ2UiOiJkZWZhdWx0LnBuZyIsImlhdCI6MTcyNzc3NzgxNCwiZXhwIjoiMjAyNC0xMC0zMVQxMToxNjo1NC45ODFaIn0.4c2DTzaAo3LqYbFhem2QeyrWAEq0xiA6hr4qhLXk1y8
 
 POST http://localhost:3911/api/artist/save
 Content-Type: application/json
@@ -6,6 +6,6 @@ Accept: application/json
 Authorization: Bearer {{token}}
 
 {
-    "name": "All Time Low",
-    "description": ""
+    "name": "Natos y Waor",
+    "description": "Spanish Rap Duo"
 }

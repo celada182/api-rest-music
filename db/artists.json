@@ -1,0 +1,24 @@
+{
+    "_id": {
+        "$oid": "66fbcc278ee5c14e3aa53dfc"
+    },
+    "name": "All Time Low",
+    "description": "American Pop Rock Band",
+    "image": "default.png",
+    "created_at": {
+        "$date": "2024-10-01T10:17:11.223Z"
+    },
+    "__v": 0
+}
+{
+    "_id": {
+        "$oid": "66fbcc4b8ee5c14e3aa53dfe"
+    },
+    "name": "Natos y Waor",
+    "description": "Spanish Rap Duo",
+    "image": "default.png",
+    "created_at": {
+        "$date": "2024-10-01T10:17:47.882Z"
+    },
+    "__v": 0
+}

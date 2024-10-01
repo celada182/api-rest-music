@@ -1,0 +1,26 @@
+name: "music-mongo"
+services: 
+  mongoimport:
+    image: bitnami/mongodb:latest
+    container_name: mongo-import
+    volumes:
+      - ./db/albums.json:/db/albums.json
+      - ./db/artists.json:/db/artists.json
+      - ./db/songs.json:/db/songs.json
+      - ./db/users.json:/db/users.json
+    command: > 
+      sh -c "
+      mongoimport --host mongodb --db music --collection albums --file /db/albums.json &&
+      mongoimport --host mongodb --db music --collection artists --file /db/artists.json &&
+      mongoimport --host mongodb --db music --collection songs --file /db/songs.json &&
+      mongoimport --host mongodb --db music --collection users --file /db/users.json
+      "
+
+  mongodb:
+    image: bitnami/mongodb:latest
+    container_name: mongodb-test
+    ports:
+      - 27017:27017
+    depends_on:
+    - mongoimport
+    restart: always
