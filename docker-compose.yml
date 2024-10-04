@@ -2,7 +2,7 @@ name: "music-mongo"
 services: 
   mongoimport:
     image: bitnami/mongodb:latest
-    container_name: mongo-import
+    container_name: mongodb-import
     volumes:
       - ./database/albums.json:/database/albums.json
       - ./database/artists.json:/database/artists.json
@@ -18,7 +18,7 @@ services:
 
   mongodb:
     image: bitnami/mongodb:latest
-    container_name: mongodb-test
+    container_name: mongodb
     ports:
       - 27017:27017
     depends_on:
