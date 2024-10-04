@@ -1,0 +1,2 @@
+@file = song-1728029289475-audio.mp3
+GET http://localhost:3911/api/song/audio/{{file}}
