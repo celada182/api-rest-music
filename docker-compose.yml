@@ -4,16 +4,16 @@ services:
     image: bitnami/mongodb:latest
     container_name: mongo-import
     volumes:
-      - ./db/albums.json:/db/albums.json
-      - ./db/artists.json:/db/artists.json
-      - ./db/songs.json:/db/songs.json
-      - ./db/users.json:/db/users.json
+      - ./database/albums.json:/database/albums.json
+      - ./database/artists.json:/database/artists.json
+      - ./database/songs.json:/database/songs.json
+      - ./database/users.json:/database/users.json
     command: > 
       sh -c "
-      mongoimport --host mongodb --db music --collection albums --file /db/albums.json &&
-      mongoimport --host mongodb --db music --collection artists --file /db/artists.json &&
-      mongoimport --host mongodb --db music --collection songs --file /db/songs.json &&
-      mongoimport --host mongodb --db music --collection users --file /db/users.json
+      mongoimport --host mongodb --db music --collection albums --file /database/albums.json &&
+      mongoimport --host mongodb --db music --collection artists --file /database/artists.json &&
+      mongoimport --host mongodb --db music --collection songs --file /database/songs.json &&
+      mongoimport --host mongodb --db music --collection users --file /database/users.json
       "
 
   mongodb:
