@@ -7,4 +7,8 @@ Using Mongo DB with a Docker container (Need docker installed)
 Start API daemon mode
 `npm start`
 
-Request Examples for Visual Studio Code Rest Client: /requests
+- Container has a pre start import for the DB: /db
+
+- Request Examples for Visual Studio Code Rest Client: /requests
+
+- Resources for testing included: /images /songs
